@@ -1,0 +1,40 @@
+<head>
+    <style>
+        @font-face { font-family: 'Cafe24Danjunghae'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff'); font-weight: normal; font-style: normal; }
+        @font-face { font-family: 'BMHANNAAir'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff'); font-weight: normal; font-style: normal; }
+        h1{
+            font-family: Cafe24Danjunghae;
+            color:darkslateblue;
+        }
+        body{
+            background-color:thistle;
+        }
+        div{
+            margin: 30px;
+            border : solid 1px black;
+            border-radius: 30px;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            background-color: white;
+        }
+        a{
+            font-family: BMHANNAAir;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>안녕하세요, 여기서 글자를 세보세요!</h1>
+
+        <a href="{%url 'about'%}">ABOUT</a>
+        <br><br>
+        <form action="{%url 'result'%}">
+            <textarea cols= "40" rows="10" name="text">여기에 입력하세요.</textarea>
+            <br><br>
+            <input type="submit" value="Count">
+        </form>
+    </div>
+    
+</body>
